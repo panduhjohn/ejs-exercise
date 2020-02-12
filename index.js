@@ -4,7 +4,7 @@ const chalk = require('chalk');
 const logger = require('morgan');
 const path = require('path');
 
-const users = require('./models/Users.json')
+const users = require('./models/Users.json');
 
 const port = process.env.PORT || 3000;
 
@@ -17,7 +17,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.get('/users', (req, res) => {
-    res.render('main/users', {users});
+    res.render('main/users', { users });
 });
 
 app.get('/first', (req, res) => {

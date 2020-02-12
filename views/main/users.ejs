@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <%- include ('../partials/head') %>
-    <title>Users</title>
-</head>
-
-<%- include ('../partials/header') %>
-<div>
-    <ol>
-        <% users.forEach(({name, city}) => { %>
-        <li><%= name %> is from <%= city %>.</li>
-        <% }) %>
-    </ol>
-</div>
+    <head>
+        <%- include ('../partials/head') %>
+        <title>Users</title>
+    </head>
+    <body>
+        <%- include ('../partials/header') %>
+        <div>
+            <ol>
+                <% users.forEach(({name, city}) => { %>
+                <li><%= name %> is from <%= city %>.</li>
+                <% }) %>
+            </ol>
+        </div>
+    </body>
+</html>

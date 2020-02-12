@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/style.css" type="text/css" />
+        <%- include ('../partials/head') %>
         <title>Location</title>
     </head>
     <body>
-        <%- include ('../partials/header') %> 
+        <%- include ('../partials/header') %>
 
         <h2 style="color:blue">Hello <%= firstName %> <%= lastName %></h2>
         <p><%= color %>, <%= car %></p>
-        <img class="skydive" src="/assets/skydive.jpg" alt="headdown">
+        <img class="skydive" src="/assets/skydive.jpg" alt="headdown" />
 
         <div>
             <ul>
@@ -20,6 +18,5 @@
                 <% }) %>
             </ul>
         </div>
-        
     </body>
 </html>

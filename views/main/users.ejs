@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <%- include ('../partials/head') %>
     <title>Users</title>
@@ -8,7 +10,6 @@
     <ol>
         <% users.forEach(({name, city}) => { %>
         <li><%= name %> is from <%= city %>.</li>
-
         <% }) %>
     </ol>
 </div>

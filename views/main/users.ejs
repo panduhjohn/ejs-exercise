@@ -1,0 +1,14 @@
+<head>
+    <%- include ('../partials/head') %>
+    <title>Users</title>
+</head>
+
+<%- include ('../partials/header') %>
+<div>
+    <ol>
+        <% users.forEach(({name, city}) => { %>
+        <li><%= name %> is from <%= city %>.</li>
+
+        <% }) %>
+    </ol>
+</div>
